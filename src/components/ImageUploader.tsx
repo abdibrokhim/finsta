@@ -62,9 +62,9 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onImagesUpload, maxImages
       </h2>
       <label
         htmlFor="dropzone-file"
-        onDrop={handleDrop}
-        onDragOver={handleDragOver}
-        onDragLeave={handleDragLeave}
+        onDrop={(e)=>handleDrop}
+        onDragOver={(e)=>handleDragOver}
+        onDragLeave={(e)=>handleDragLeave}
         style={{
           border: `3px dashed ${dragIsOver ? 'var(--dreamy-purple)' : 'var(--dreamy-lavender)'}`,
           backgroundColor: dragIsOver ? 'var(--dreamy-pink)' : 'var(--dreamy-light-pink)',
